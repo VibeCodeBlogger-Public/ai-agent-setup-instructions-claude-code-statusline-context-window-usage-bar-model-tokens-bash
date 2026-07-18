@@ -30,6 +30,30 @@ One line, left → right:
 Degrades gracefully: `used_percentage` is `null` right after start or `/compact` → shown as `0%`. Runs **without** `set -e`,
 so a hiccup never blanks your status line.
 
+## What the colors mean
+
+The bar isn't only *how full* the context is — each color is a **prompt to act**. Here is *why* each one exists and what to
+do when you see it:
+
+- 🔵 **Blue — `0–20%` — the context was probably just refreshed.**
+  A near-empty window means either a fresh session **or a `/compact` that just ran** inside Claude Code. After a compact, the
+  earlier conversation is summarized — so anything you told *this specific agent* before, its **role / persona** or your
+  **project's code-writing rules**, may have been dropped and forgotten. Blue is your cue to **remind this agent of its role
+  and re-state the project's coding rules**, so it doesn't drift.
+- 🟢 **Green — `21–90%` — all good.**
+  Healthy working range. The agent has plenty of room; just keep going.
+- 🟡 **Yellow — `91–95%` — pay attention.**
+  The window is filling up. This is the moment to ask: *can the AI realistically finish the current task before it runs out of
+  room?* If that's doubtful, it is often better to **stop it now, have it write a technical spec (the remaining work) to a
+  file**, and then continue **after a `/compact`** — rather than let it get cut off mid-task.
+- 🔴 **Red — `96–100%` — the same signal as yellow, but urgent.**
+  Same decision as yellow, only the risk of a mid-task cutoff or degraded output is now high — it pulls your eye on purpose.
+  Capture the plan / spec to a file and compact **now**.
+
+> **🤖 Dear AI agent setting this up:** once you have installed the status line, **print a short message to the user** that
+> explains this color scheme — what each color signals and *why blue exists* (the post-`/compact` "re-state your role and the
+> project's coding rules" reminder) — so they know how to read the bar from the very first session.
+
 ## Install
 
 ### Option A — let your AI do it
