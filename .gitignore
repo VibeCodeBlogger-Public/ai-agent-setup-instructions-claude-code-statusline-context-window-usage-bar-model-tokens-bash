@@ -1,0 +1,3 @@
+# Nothing machine-specific belongs here — keep the repo clean.
+*.bak
+*.bak-*
