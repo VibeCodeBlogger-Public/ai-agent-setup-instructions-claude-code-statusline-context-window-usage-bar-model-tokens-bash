@@ -1,0 +1,26 @@
+# Claude Code status line — context-window usage bar (model · effort · tokens)
+
+> A Claude Code statusLine written in Bash: a thin coloured context-window usage bar with the percentage in the centre, plus effort · model · tokens. Paste the repo link into your AI agent and it installs it. Open source (MIT).
+
+## What it is
+- A single-line Claude Code status line: a fixed-width bar (filled/empty blocks) showing how much of the context window is used, with the percentage centered, plus effort level, model display name, and token counts (e.g. 68k/200k).
+- Reads the session JSON Claude Code pipes to the statusLine command on stdin (used_percentage, context_window_size, total_input_tokens, model.display_name, effort.level).
+- Dependency-light: bash, jq, awk. Runs without set -e so a hiccup never blanks the status line.
+
+## The colour scheme (a prompt to act)
+- Blue (0–20%): context probably just refreshed — a fresh session or a /compact just ran. Re-state the agent's role and re-paste the project's coding rules, which the compact may have dropped.
+- Green (21–90%): healthy working range; keep going.
+- Yellow (91–95%): pay attention; if the AI may not finish the task, have it write a spec of the remaining work to a file, then continue after a /compact.
+- Red (96–100%): same as yellow but urgent; capture the plan to a file and compact now.
+
+## Install
+- Recommended: paste the repo link into Claude Code and ask it to install the status line (it copies statusline.sh into ~/.claude/ and wires the statusLine block into settings.json).
+- One command: git clone the repo and run ./install.sh.
+- Requirements: bash, jq, awk (standard on Linux and macOS).
+
+## Links
+- Repository: https://github.com/VibeCodeBlogger-Public/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash
+- Claude Code: https://claude.com/claude-code
+
+## Author
+- VibeCodeBlogger — https://github.com/VibeCodeBlogger and https://www.youtube.com/@VibeCodeBlogger
