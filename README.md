@@ -8,6 +8,10 @@ installer below. A clean, dependency-light `statusLine` for [Claude Code](https:
 ![shell](https://img.shields.io/badge/shell-bash-4EAA25?logo=gnubash&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-1f6feb)
 
+<p align="center">
+  <img src="assets/preview.png" alt="Claude Code status line preview — colored context-window usage bar, effort, model and tokens" width="900" />
+</p>
+
 ## What it shows
 
 One line, left → right:
