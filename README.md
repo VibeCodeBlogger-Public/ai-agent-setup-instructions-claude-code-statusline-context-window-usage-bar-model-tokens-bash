@@ -1,4 +1,4 @@
-# Claude Code status line — context-window usage bar + model, effort & tokens
+# AI-agent setup instructions — Claude Code status line (context-window usage bar + model, effort & tokens)
 
 **Just paste this repo's link into your favorite AI coding agent (Claude Code, Cursor, Codex…) and it sets up the status
 line for you** — it copies the script into `~/.claude/` and wires it into `settings.json`. Or run the one-command
@@ -38,8 +38,8 @@ Paste this repo's URL into Claude Code (or your agent) and say *"install this st
 
 ### Option B — one command
 ```sh
-git clone https://github.com/VibeCodeBlogger-Public/claude-code-statusline-context-window-usage-bar-model-tokens-effort-bash.git
-cd claude-code-statusline-context-window-usage-bar-model-tokens-effort-bash
+git clone https://github.com/VibeCodeBlogger-Public/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash.git
+cd ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash
 ./install.sh
 ```
 
