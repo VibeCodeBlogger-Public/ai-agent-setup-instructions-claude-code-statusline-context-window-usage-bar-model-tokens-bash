@@ -7,6 +7,9 @@ installer below. A clean, dependency-light `statusLine` for [Claude Code](https:
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-statusLine-d97757)
 ![shell](https://img.shields.io/badge/shell-bash-4EAA25?logo=gnubash&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-1f6feb)
+[![Website](https://img.shields.io/badge/website-landing_page-34d17a)](https://vibecodeblogger-public.github.io/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash/)
+
+🌐 **New here? Start on the [landing page →](https://vibecodeblogger-public.github.io/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash/)** — an illustrated overview, including the colour scheme.
 
 <p align="center">
   <img src="assets/preview.png" alt="Claude Code status line preview — colored context-window usage bar, effort, model and tokens" width="900" />
