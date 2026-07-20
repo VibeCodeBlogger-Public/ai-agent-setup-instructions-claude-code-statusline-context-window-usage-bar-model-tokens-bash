@@ -8,6 +8,7 @@ installer below. A clean, dependency-light `statusLine` for [Claude Code](https:
 ![shell](https://img.shields.io/badge/shell-bash-4EAA25?logo=gnubash&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-1f6feb)
 [![Website](https://img.shields.io/badge/website-landing_page-34d17a)](https://vibecodeblogger-public.github.io/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash/)
+[![Landing-page views](https://vcb-views.pages.dev/badge/statusline.svg)](https://vibecodeblogger-public.github.io/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash/)
 
 🌐 **New here? Start on the [landing page →](https://vibecodeblogger-public.github.io/ai-agent-setup-instructions-claude-code-statusline-context-window-usage-bar-model-tokens-bash/)** — an illustrated overview, including the colour scheme.
 
